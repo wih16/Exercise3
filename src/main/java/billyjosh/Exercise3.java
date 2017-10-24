@@ -3,18 +3,18 @@ public class Exercise3{
     public static void main(String[] args){
 	int arg = 0;
 	if(args.length != 1){	  
-	    System.out.println("Usage: java Excercise3 [integer >= 0]1");
+	    System.out.println("Usage: java Excercise3 [integer >= 0]");
 	    System.exit(1);
 	}
 	try{
 	    arg = Integer.parseInt(args[0]);
 	}
 	catch(Exception e){
-	    System.out.println("Usage: java Excercise3 [integer >= 0]2");
+	    System.out.println("Usage: java Excercise3 [integer >= 0]");
 	    System.exit(1);
 	}
 	if(arg < 0){
-	    System.out.println("Usage: java Excercise3 [integer >= 0]3");
+	    System.out.println("Usage: java Excercise3 [integer >= 0]");
 	    System.exit(1);
 	}
 	System.out.println("Tri(" + arg + ") = " + tri(arg));
